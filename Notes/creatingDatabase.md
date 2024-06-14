@@ -51,10 +51,10 @@ This is what we use to hold data within a database.
 
 Quick Example using Cats.
 
-| Name | Breed | Age |          <- Columns ( Headers )
-| Blue | Scottish Fold | 1 |    <- Rows ( The Actual Data )
-| Rocket | Persian | 3 |        <- Rows ( The Actual Data )
-| Monty | Tabby | 10 |          <- Rows ( The Actual Data )
-| Same | Munchkin | 5 |         <- Rows ( The Actual Data )
+| Name | Breed | Age          <- Columns ( Headers )
+| Blue | Scottish Fold | 1    <- Rows ( The Actual Data )
+| Rocket | Persian | 3        <- Rows ( The Actual Data )
+| Monty | Tabby | 10          <- Rows ( The Actual Data )
+| Same | Munchkin | 5         <- Rows ( The Actual Data )
 
 Databases are made up of lots of tables.
