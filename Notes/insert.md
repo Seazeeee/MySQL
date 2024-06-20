@@ -135,7 +135,7 @@ There is another syntax:
 CREATE TABLE unique_cats (
     cat_id INT NOT NULL,
     name VARCHAR(100),
-    age INT
+    age INT,
     PRIMARY KEY(cat_id)
 );
 ```
@@ -152,7 +152,7 @@ be changed.
 CREATE TABLE unique_cats (
     cat_id INT AUTO_INCREMENT,
     name VARCHAR(100),
-    age INT
+    age INT,
     PRIMARY KEY(cat_id)
 );
 ```
