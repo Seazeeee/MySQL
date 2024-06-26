@@ -74,3 +74,48 @@ SELECT SUBSTRING(title, 1, 15) FROM Books;
 
 > You can also replace SUBSTRING with SUBSTR()
 
+### Combining CONCAT() and SUBSTR()
+
+Some examples of using both of these string functions.
+
+```sql
+
+SELECT CONCAT(SUBSTR(title, 1, 10), '...') AS short_title  FROM books;
+
+SELECT CONCAT(
+               SUBSTR(author_fname, 1, 1), '.', SUBSTR(author_lname, 1, 1), '.'
+       ) AS author_initials
+FROM books
+
+```
+
+## Replace
+
+Replace parts of strings
+
+Important to note that we aren't updating or re-formatting our data in any way.
+
+Ex:
+
+```sql
+
+SELECT REPLACE('Hello World', 'Hell', '%$#@')
+
+-- This gives us "%$#@o World"
+```
+
+```sql
+
+SELECT
+        REPLACE ('cheese bread coffee milk', ' ', ' and ');
+
+-- This gives us 'cheese and bread and coffee and milk'
+```
+
+Replace is also case-sensitive
+
+```sql
+
+SELECT REPLACE(title, ' ', '-') FROM books;
+
+```
