@@ -119,3 +119,53 @@ Replace is also case-sensitive
 SELECT REPLACE(title, ' ', '-') FROM books;
 
 ```
+
+## Reverse
+
+Will take whatever string we provide to it and reverse it.
+
+```sql
+
+SELECT REVERSE('Hello World')
+
+-- This returns 'dlroW olleH'
+
+```
+
+## CHAR_LENGTH
+
+Gives us the amount of characters in the given string.
+
+```sql
+
+SELECT CHAR_LENGTH('Hey!')
+
+-- This returns 4
+
+```
+
+LENGTH and CHAR_LENGTH are different.
+
+LENGTH checks for Bytes.
+
+CHAR_LENGTH tells us the # of characters.
+
+## LOWER() and UPPER()
+
+These are self explanatory. They provide either all lower or upper of the given string.
+
+## INSERT()
+
+Adds a string into an already given string.
+
+## LEFT() and RIGHT()
+
+Gets either the most left or most right with a given amount of characters from that given point.
+
+## REPEAT()
+
+Repeats the given string the given amount of times.
+
+## TRIM()
+
+Removes either the given characters or the spaces on from and end. Can be used with the keyword LEADING, BOTH, and TRAILING. These are used to identify the location of what you want to trim.
